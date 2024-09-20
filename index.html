@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task18</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+           /* background-image: url("https://farm5.staticflickr.com/4245/34378168630_2ef45b6833_k.jpg?momo_cache_bg_uuid=971d024d-a730-4f7e-9578-1098ea782f9e");*/
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-clip: content-box;
+           /* display: flex;
+            flex-direction: row;
+            justify-content: center;*/
+
+        }
+
+        #search {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            position: relative;
+            top: 30px;
+
+        }
+
+        #main {
+            height: 550px;
+            width: 450px;
+            background-color: black;
+            color: aliceblue;
+            opacity: 70%;
+            border-radius: 15px;
+            position: relative;
+            left:225px;
+            right:225px;
+            top: 90px;
+          /*  display: flex;
+            flex-direction: column;
+            justify-content: space-between;*/
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+
+
+
+
+        }
+
+        #input {
+            padding: 15px;
+            border-radius: 18px;
+            border: none;
+            width: 80%;
+
+        }
+
+        ::placeholder {
+            color: black;
+        }
+
+
+
+        button {
+            padding: 15px;
+            border-radius: 25px;
+            background-color: rgba(0, 255, 247, 0.575);
+            border: none;
+        }
+
+        #place,
+        #image {
+
+            height: 150px;
+            width: 400px;
+            position: relative;
+            left: 25px;
+            text-align: center;
+
+        }
+
+        #city {
+            font-weight: 700;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #weather,
+        #moderate {
+            font-size: 15px;
+        }
+
+        img {
+            opacity: 100%;
+        }
+
+        #degree {
+            font-size: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #mm {
+
+
+
+            height: 60px;
+            width: 160px;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+
+
+        }
+
+        #min {
+            border-right: 1px solid white;
+        }
+
+        #max,
+        #min {
+
+            width: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+
+        <div id="main">
+            <div id="search">
+                <input type="search" placeholder="Enter a city name" id="input">
+                <button type="submit" onclick="fetchData()"><i class="fa fa-search"></i></button>
+            </div><br><br>
+            <div id="place">
+                <p id="city">MUMBAI, IN</p>
+                <P id="weather">RAIN</P>
+                <P id="moderate">MODERATE RAIN</P>
+            </div>
+            <div id="image">
+                <img src="icon/01n.png" id="images" height="80px">
+                <p id="degree">25.99</p>
+            </div><br><br><br>
+            <div id="mm">
+                <div id="min">min<br>25.99</div>
+                <div id="max">max<br>25.99</div>
+            </div>
+        </div><br><br><br><br>
+        <h1>Map,filter & Reduce </h1>
+    <h2>Map</h2>
+    <P>map() creates a new array from calling a function for every array element.<br>
+        map() does not execute the function for empty elements.<br>
+        map() does not change the original array.</P>
+    <h2>Filter</h2>
+    <p>The filter() method creates a new array filled with elements that pass a test provided by a function.<br>
+        The filter() method does not execute the function for empty elements.<br>
+        The filter() method does not change the original array.</p>
+    <h2>Reduce</h2>
+    <p>The reduce() method executes a reducer function for array element.<br>
+        The reduce() method returns a single value: the function's accumulated result.<br>
+        The reduce() method does not execute the function for empty array elements.<br>
+        The reduce() method does not change the original array.
+        </p>
+        </body>
+<script src="index.js"></script>
+</html>
