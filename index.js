@@ -1,5 +1,5 @@
 //Question 1:
-/*
+
 
 let numbers=[2,3,4,5,6];
 function square(num){
@@ -8,7 +8,7 @@ function square(num){
 
  let newarray=numbers.map(square);
  console.log(newarray);
-*/
+
 
 //Question 2:
 /*
